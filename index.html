@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <a href="/index.html" class="header__logo"></a>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item"><a class="header__link"  href="#">About</a></li>
+                <li class="header__item"><a class="header__link" href="#">FAQ</a></li>
+                <li class="header__item"><a class="header__link" href="#">Сontacts</a></li>
+            </ul>
+        </nav>
+        <div class="burger">
+            <span></span>
+        </div>
+    </header>
+    <div class="container">
+        <section>
+            <div class="slider-box">
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide"><img src="/img/4.jpg" alt="" class="swiper-img"></div>
+                      <div class="swiper-slide"><img src="/img/5.jpg" alt="" class="swiper-img"></div>
+                      <div class="swiper-slide"><img src="/img/6.jpg " alt="" class="swiper-img"></div>
+                      ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+        <div class="text">
+            <h1>Each character is original in their own way</h1>
+            <p class="text2">
+                Each of them has their own biography, their own abilities and special features.
+            </p>
+        </div>
+        <div class="card">
+            <div class="card__item">
+                <div class="card__cover">
+                    <img class="card__img" src="img/image01.png" alt="">
+                </div>
+                <div class="card__info">
+                    <div class="card__text">
+                        <p class="card__nick">EVA</p>
+                        <p class="card__autor">Best Marksman</p>
+                    </div>
+                </div>
+                <a href="#" class="card__link">Read more</a>
+            </div>
+            <div class="card__item">
+                <div class="card__cover">
+                    <img class="card__img" src="img/Сойка_(инфобокс).webp   " alt="">
+                </div>
+                <div class="card__info">
+                    <div class="card__text">
+                        <p class="card__nick">Song So Mi</p>
+                        <p class="card__autor">Netrunner</p>
+                    </div>
+                </div>
+                <a href="/char.html" class="card__link">Read more</a>
+            </div>
+            <div class="card__item">
+                <div class="card__cover">
+                    <img class="card__img" src="img/image01.png" alt="">
+                </div>
+                <div class="card__info">
+                    <div class="card__text">
+                        <p class="card__nick">EVA</p>
+                        <p class="card__autor">Best Marksman</p>
+                    </div>
+                </div>
+                <a href="#" class="card__link">Read more</a>
+            </div>
+        </div>
+        </section>
+    </div>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.header__nav').classList.toggle('open');
+        })
+        
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

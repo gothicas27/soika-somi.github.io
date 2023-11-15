@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto:wght@400;500;700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Poppins:wght@500;700&family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(81deg, #ddb35f, #7409c7) no-repeat;
+}
+
+.header {
+    max-width: 1197px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+}
+
+.header__logo {
+    display: block;
+    width: 250px;
+    height: 50px;
+    background-image: url('../img/Cyberpunk_2077_logo_turquoise.svg');
+    background-repeat: no-repeat;
+}
+
+.form {
+    position: relative;
+}
+.form__button {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url('/img/search.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    
+    border:none;
+    position: absolute;
+    top: calc(50% - 10px);
+    
+    
+}
+.form__input {
+    width: 200px;
+    border: none;
+    padding: 5px 30px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.1)
+}
+
+.form__input:focus{
+    outline: none;
+}
+.form__input::placeholder {
+    color: var(--half-white, rgba(255, 255, 255, 0.50));
+  }
+
+.header__list {
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+}
+
+.header__link {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.header__link:hover {
+    color: orange;
+    transition: .3s;
+}
+
+.container {
+        margin: 0 auto;
+        max-width: 1197px;
+        height: 100vh;
+        padding-left: 15px;
+        padding-right: 15px;
+
+}
+
+.char {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    
+    
+}
+.char__photo {
+    border: #ddb35f 10px solid;
+    cursor: pointer;
+}
+.char__photo1 {
+    
+}
+.char__photo2 {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.char__text {
+    
+    font-family: 'Kanit', sans-serif;
+    color: #fff;
+    font-weight: bold;
+    max-width: 450px;
+    height: auto;
+    line-height: 1.1;
+    
+}
+.char__text {
+    font-size: 16px;
+}
+.char__h1 {
+    margin-top: 15px;
+    text-align: center;
+    border: 3px solid #fff ;
+    
+}
+
+.char__p {
+    
+    
+
+}
+
+.header__buttons {
+    display: none;
+
+}
+
+@media (max-width: 1175px) {
+    .char__p {
+      font-size: 14px; /* Уменьшаем размер шрифта до 14 пикселей при ширине экрана до 768 пикселей */
+    }
+  }
+
+  @media (max-width: 965px) {
+    .char {
+       display: flex;
+       flex-direction: column;
+      }
+      
+      .char__photo2 {
+        max-width: 430px;
+      }
+      
+      .container {
+        max-width: 100%;
+        height: auto;
+      }
+
+    .header__buttons {
+        display: flex;
+
+      }
+      .form, 
+      .header__nav {
+        display: none;
+      }
+      .header__search,
+      .header__menu {
+        display: block;
+        border: none;
+        background: transparent;
+        height: 20px;
+      }
+      .header__search {
+        width: 20px;
+        background-image: url(../img/search-mobile.svg);
+      }
+      .header__menu {
+        width: 27px;
+
+        background-image: url(../img/menu-mobile.svg);
+        margin-left: 22px;
+      }
+  }
